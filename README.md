@@ -4,7 +4,7 @@
     http://localhost:5000/abc
 ### Method 2 argument
     http://localhost:5000/abc?method2=vnit
-### Method 3 post (using form)
+### Method 3 post (using form) form.html
 ### Method 4 cookie
     res.set_cookie('method4', 'vnit-cookie')
 ### Method 5 header
