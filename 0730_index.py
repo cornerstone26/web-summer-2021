@@ -2,7 +2,7 @@ from flask import Flask, render_template, send_file, request, make_response
 app = Flask(__name__)
 # @app.route('/', methods=["GET", "POST"])
 # def hello_world():
-#     return render_template("index.html")
+#     return render_template("_index.html")
 
 @app.route('/<query_string>', methods=['GET','POST'])
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <body>
+        <h1 id="text"></h1>    
+        <script>
+            const url = '/short';
+            const text = document.getElementById('text');
+
+            const http = new XMLHttpRequest();
+            http.onreadystatechange = () => {
+                if (http.readyState == 4 && http.status == 200) {
+                    text.innerText = http.responseText;
+                };
+            };
+            
+            function get_data(){
+                http.open('POST', url, true);
+                http.send();
+            }
+            
+            setInterval(get_data, 1000);
+            
+        </script>
+    </body>
+</html>
