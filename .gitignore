@@ -1,1 +1,4 @@
 /venv
+app_config.py
+/database/user
+/__pycache__
